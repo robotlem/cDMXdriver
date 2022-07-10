@@ -2,7 +2,7 @@
 Driver to use a serial port on linux to output a dmx-signal
 # About
 ## Hardware
-Use the TX pin of your serial port or usb to serial adapter as a input for a RS485 transmitter (e.g.MAX485).
+Use the TX pin of your serial port or usb to serial adapter (e.g. CP2102 or FT232RL) as a input for a RS485 transmitter (e.g.MAX485).
 Connect the output of the RS485 transmitter to your DMX device.
 #### example for MAX485:
 - Pin 3, 8 at Vcc = 5V
@@ -22,3 +22,5 @@ Connect the output of the RS485 transmitter to your DMX device.
 - `stopDMXOutput(dmx)`: Stops the active output.
 - `closeDMXPort(dmx)`: Stops sending signals and closes the serial port.
 # Notes
+- I haven't tested the software with a real DMX device yet.
+- There are some ohter usefull functions. Take a look at cDMXdriver.h.
