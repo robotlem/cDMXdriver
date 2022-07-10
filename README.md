@@ -23,4 +23,6 @@ Connect the output of the RS485 transmitter to your DMX device.
 - `closeDMXPort(dmx)`: Stops sending signals and closes the serial port.
 # Notes
 - I haven't tested the software with a real DMX device yet.
+- I used a CP2102 USB to TTL adapter to test the software.
+- Look in the img folder for oszi images.
 - There are some ohter usefull functions. Take a look at cDMXdriver.h.
