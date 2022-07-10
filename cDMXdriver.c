@@ -83,7 +83,7 @@ struct dmxPort * initDMXPort(char port[])
 }
 void closeDMXPort(struct dmxPort *dmx)
 {
-    dmx->activeOutput = 0;
+    stopDMXOutput(dmx);
     close(dmx->serial_port);
 }
 void setMaxDMXChannel(struct dmxPort *dmx, int maxChannnel)
